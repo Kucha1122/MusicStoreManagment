@@ -1,0 +1,8 @@
+C:\repos\asp-net-store\Store\bin\Debug\netcoreapp2.0\Store.deps.json
+C:\repos\asp-net-store\Store\bin\Debug\netcoreapp2.0\Store.runtimeconfig.json
+C:\repos\asp-net-store\Store\bin\Debug\netcoreapp2.0\Store.runtimeconfig.dev.json
+C:\repos\asp-net-store\Store\bin\Debug\netcoreapp2.0\Store.dll
+C:\repos\asp-net-store\Store\obj\Debug\netcoreapp2.0\Store.csprojResolveAssemblyReference.cache
+C:\repos\asp-net-store\Store\obj\Debug\netcoreapp2.0\Store.csproj.CoreCompileInputs.cache
+C:\repos\asp-net-store\Store\obj\Debug\netcoreapp2.0\Store.AssemblyInfoInputs.cache
+C:\repos\asp-net-store\Store\obj\Debug\netcoreapp2.0\Store.AssemblyInfo.cs
