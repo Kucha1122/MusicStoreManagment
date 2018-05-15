@@ -19,7 +19,7 @@ namespace Store.Data.Model
         public int AlbumPrice { get; set; }
 
         public virtual Band Band { get; set; }
-        public int AuthorId { get; set; }
+        public int BandId { get; set; }
 
         public virtual Customer Borrower { get; set; }
         public int BorrowerId { get; set; }
