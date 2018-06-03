@@ -25,7 +25,7 @@ namespace Store.Controllers
         {
             if(bandId == null && borrowerId == null)
             {
-                //all books
+                //all albums
                 var albums = _albumRepository.GetAllWithBand();
 
                 return CheckAlbums(albums);
@@ -127,13 +127,5 @@ namespace Store.Controllers
 
             return RedirectToAction("List");
         }
-           
-
-
-
-       
-
-
-
     }
 }

@@ -1,0 +1,21 @@
+﻿@model Band
+
+<div class="row orderForm">
+    <form asp-controller="Band" asp-action="Update" method="post" class="form-horizontal" role="form">
+        <h3 class="col-md-offset-2">Edytuj zespół @Model.BandName</h3>
+        @Html.HiddenFor(m => Model.BandId)
+        <div class="form-group">
+            <label asp-for="BandName" class="col-md-2 control-label"></label>
+            <div class="col-md-6">
+                <input asp-for="BandName" class="form-control" placeholder="Wprowadź nazwę zespołu" />
+                <span asp-validation-for="BandName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="btn-group col-md-offset-2 col-md-6">
+                <input class="btn btn-default" type="submit" value="Return" asp-controller="Band" asp-action="List" />
+                <input class="btn btn-success" type="submit" value="Update" />
+            </div>
+        </div>
+    </form>
+</div>

@@ -9,3 +9,14 @@ C:\repos\asp-net-store\Store\obj\Debug\netcoreapp2.0\Store.csprojAssemblyReferen
 C:\repos\asp-net-store\Store\bin\Debug\netcoreapp2.0\Store.pdb
 C:\repos\asp-net-store\Store\obj\Debug\netcoreapp2.0\Store.dll
 C:\repos\asp-net-store\Store\obj\Debug\netcoreapp2.0\Store.pdb
+C:\Github\MusicStoreManagment\Store\bin\Debug\netcoreapp2.0\Store.deps.json
+C:\Github\MusicStoreManagment\Store\bin\Debug\netcoreapp2.0\Store.runtimeconfig.json
+C:\Github\MusicStoreManagment\Store\bin\Debug\netcoreapp2.0\Store.runtimeconfig.dev.json
+C:\Github\MusicStoreManagment\Store\bin\Debug\netcoreapp2.0\Store.dll
+C:\Github\MusicStoreManagment\Store\bin\Debug\netcoreapp2.0\Store.pdb
+C:\Github\MusicStoreManagment\Store\obj\Debug\netcoreapp2.0\Store.csprojAssemblyReference.cache
+C:\Github\MusicStoreManagment\Store\obj\Debug\netcoreapp2.0\Store.csproj.CoreCompileInputs.cache
+C:\Github\MusicStoreManagment\Store\obj\Debug\netcoreapp2.0\Store.AssemblyInfoInputs.cache
+C:\Github\MusicStoreManagment\Store\obj\Debug\netcoreapp2.0\Store.AssemblyInfo.cs
+C:\Github\MusicStoreManagment\Store\obj\Debug\netcoreapp2.0\Store.dll
+C:\Github\MusicStoreManagment\Store\obj\Debug\netcoreapp2.0\Store.pdb

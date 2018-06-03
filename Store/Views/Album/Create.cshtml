@@ -1,0 +1,36 @@
+﻿@model AlbumViewModel
+
+<div class="row orderForm">
+    <form asp-controller="Album" asp-action="Create" method="post" class="form-horizontal" role="form">
+        <h3 class="col-md-offset-2">Stwórz nowy album</h3>
+
+
+        <div class="form-group">
+            <label asp-for="Album.Band" class="col-md-2 control-label"></label>
+            <div class="col-md-4">
+                @Html.DropDownListFor(m => m.Album.BandId,
+                                       new SelectList(Model.Bands.Select(x => new { Value = x.BandId, Text = x.BandName }), "Value", "Text"), "Wybierz zespół",
+                                       htmlAttributes: new { @class = "form-control border-input" })
+                <span asp-validation-for="Album.Band" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-2">
+                <a class="btn btn-success" style="width:100%" asp-controller="Band" asp-action="Create">Stwórz zespół</a>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label asp-for="Album.Title" class="col-md-2 control-label"></label>
+            <div class="col-md-6">
+                <input asp-for="Album.Title" class="form-control" placeholder="Wprowadź nazwę albumu" />
+                <span asp-validation-for="Album.Title" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="btn-group col-md-offset-2 col-md-6">
+                <input class="btn btn-default" type="submit" value="Return" asp-controller="Album" asp-action="List" />
+                <input class="btn btn-success" type="submit" value="Create" />
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,24 @@
+﻿@model Band
+
+<div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <p>@Model.BandName</p>
+        </div>
+        <div class="panel-body">
+            <h2>Ilość albumów: @Model.Albums?.Count</h2>
+            <div class="btn-group">
+                @if (Model.Albums?.Count == 0)
+                {
+                <a class="btn btn-default" asp-area="">Lista albumów</a>
+                }
+                else
+                {
+                <a class="btn btn-info" asp-area="" asp-controller="Album" asp-action="List" asp-route-authorId="@Model.BandId">Wyświetl listę albumów</a>
+                }
+                <a class="btn btn-info" asp-area="" asp-controller="Band" asp-action="Update" asp-route-id="@Model.BandId">Edytuj</a>
+                <a class="btn btn-danger" asp-area="" asp-controller="Band" asp-action="Delete" asp-route-id="@Model.BandId">Usuń</a>
+            </div>
+        </div>
+    </div>
+</div>

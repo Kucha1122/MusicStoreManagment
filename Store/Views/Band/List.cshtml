@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Band>
+
+<a class="btn btn-success mt-5" style="margin: 10px" asp-controller="Band" asp-action="Create">Stwórz nowy zespół</a>
+
+<div class="row">
+    @foreach (var band in Model)
+    {
+        @Html.Partial("BandPartial", band)
+    }
+</div>
