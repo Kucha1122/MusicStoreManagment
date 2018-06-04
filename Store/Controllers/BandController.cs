@@ -65,6 +65,11 @@ namespace Store.Controllers
         [HttpPost]
         public IActionResult Create(Band band)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(band);
+            }
+
             _bandRepository.Create(band);
 
             return RedirectToAction("List");
