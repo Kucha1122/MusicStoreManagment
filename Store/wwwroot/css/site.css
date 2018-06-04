@@ -33,3 +33,11 @@
         display: none;
     }
 }
+td img {
+    width: 100px;
+    height: 100px;
+}
+.carousel-inner {
+    width: 1140px;
+    height: 260px;
+}

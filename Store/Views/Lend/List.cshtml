@@ -4,20 +4,24 @@
     <thead>
         <tr>
             <th>ID</th>
-            <th>Nazwa albumu</th>
+            <th>Okładka</th>
             <th>Nazwa zespołu</th>
+            <th>Nazwa albumu</th>
             <th>Wypożycz płytę</th>
         </tr>
     </thead>
     <tbody>
         @foreach (Album album in Model)
         {
-            <tr>
-                <td>@album.AlbumId</td>
-                <td>@album.Title</td>
-                <td>@album.Band.BandName</td>
-                <td><a class="btn btn-success" asp-area="" asp-controller="Lend" asp-action="LendAlbum" asp-route-albumId="@album.AlbumId">Wypożycz</a></td>
-            </tr>
+        <tr>
+            <td>@album.AlbumId</td>
+            <td>
+                <img src="@album.AlbumArtUrl" />
+            </td>
+            <td>@album.Band.BandName</td>
+            <td>@album.Title</td>
+            <td><a class="btn btn-success" asp-area="" asp-controller="Lend" asp-action="LendAlbum" asp-route-albumId="@album.AlbumId">Wypożycz</a></td>
+        </tr>
         }
     </tbody>
 </table>

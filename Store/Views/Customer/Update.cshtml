@@ -5,17 +5,10 @@
         <h3 class="col-md-offset-2">Edytuj uzytkownika @Model.CustomerName </h3>
         @Html.HiddenFor(m => Model.CustomerId)
         <div class="form-group">
-            <label asp-for="CustomerName" class="col-md-2 control-label">Imie</label>
+            <label asp-for="CustomerName" class="col-md-2 control-label">Imię</label>
             <div class="col-md-6">
                 <input asp-for="CustomerName" class="form-control" />
                 <span asp-validation-for="CustomerName" class="text-danger"></span>
-            </div>
-        </div>
-        <div class="form-group">
-            <label asp-for="CustomerLastName" class="col-md-2 control-label">Nazwisko</label>
-            <div class="col-md-6">
-                <input asp-for="CustomerLastName" class="form-control" />
-                <span asp-validation-for="CustomerLastName" class="text-danger"></span>
             </div>
         </div>
         <div class="form-group">
@@ -27,7 +20,7 @@
         </div>
         <div class="form-group">
             <div class="btn-group col-md-offset-2 col-md-6">
-                <input class="btn btn-default" type="submit" value="Wroc" asp-controller="Customer" asp-action="List" />
+                <input class="btn btn-default" type="submit" value="Wróć" asp-controller="Customer" asp-action="List" />
                 <input class="btn btn-success" type="submit" value="Aktualizuj" />
             </div>
         </div>

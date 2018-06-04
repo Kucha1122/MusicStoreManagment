@@ -19,8 +19,7 @@ namespace Store.Data
                 //Przykladowi użytkownicy
                 var janusz = new Customer
                 {
-                    CustomerName = "Janusz",
-                    CustomerLastName = "Nowak",
+                    CustomerName = "Janusz Nowak",
                     Password = "password123",
                     CustomerEmail = "janusz.nowak@o2.pl",
                     ShippingAddress = "Akacjowa 53 Warszawa"
@@ -28,8 +27,7 @@ namespace Store.Data
 
                 var andrzej = new Customer
                 {
-                    CustomerName = "Andrzej",
-                    CustomerLastName = "Borowik",
+                    CustomerName = "Andrzej Borowik",
                     Password = "qwertyzxc123",
                     CustomerEmail = "andrzej.borowik@gmail.pl",
                     ShippingAddress = "Złota 59 Warszawa"

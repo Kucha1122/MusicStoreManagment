@@ -6,8 +6,7 @@
     <thead>
         <tr>
             <th>ID</th>
-            <th>Imie</th>
-            <th>Nazwisko</th>
+            <th>Imię i nazwisko</th>
             <th>Adres</th>
             <th>Ilosc zamowionych plyt</th>
             <th>Edytuj klienta</th>
@@ -20,11 +19,10 @@
         <tr>
             <td>@customerVM.Customer.CustomerId</td>
             <td>@customerVM.Customer.CustomerName</td>
-            <td>@customerVM.Customer.CustomerLastName</td>
             <td>@customerVM.Customer.ShippingAddress</td>
             <td>@customerVM.AlbumCount</td>
-            <td><a class="btn btn-info" asp-area="" asp-controller="Customer" asp-action="Update" asp-route-id="@customerVM.Customer.CustomerId">Edit</a></td>
-            <td><a class="btn btn-danger" asp-area="" asp-controller="Customer" asp-action="Delete" asp-route-id="@customerVM.Customer.CustomerId">Usun</a></td>
+            <td><a class="btn btn-info" asp-area="" asp-controller="Customer" asp-action="Update" asp-route-id="@customerVM.Customer.CustomerId">Edytuj</a></td>
+            <td><a class="btn btn-danger" asp-area="" asp-controller="Customer" asp-action="Delete" asp-route-id="@customerVM.Customer.CustomerId">Usuń</a></td>
         </tr>
         }
     </tbody>

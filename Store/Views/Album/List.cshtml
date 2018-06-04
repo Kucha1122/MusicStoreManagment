@@ -6,8 +6,9 @@
     <thead>
         <tr>
             <th>ID</th>
-            <th>Nazwa</th>
+            <th>Okładka</th>
             <th>Nazwa zespołu</th>
+            <th>Nazwa</th>
             <th>Edytuj album</th>
             <th>Usuń album</th>
         </tr>
@@ -15,13 +16,16 @@
     <tbody>
         @foreach (Album album in Model)
         {
-            <tr>
-                <td>@album.AlbumId</td>
-                <td>@album.Title</td>
-                <td>@album.Band.BandName</td>
-                <td><a class="btn btn-info" asp-area="" asp-controller="Album" asp-action="Update" asp-route-id="@album.AlbumId">Edit</a></td>
-                <td><a class="btn btn-danger" asp-area="" asp-controller="Album" asp-action="Delete" asp-route-id="@album.AlbumId" asp-route-authorId="@ViewBag.BandId">Delete</a></td>
-            </tr>
+        <tr>
+            <td>@album.AlbumId</td>
+            <td>
+                <img src="@album.AlbumArtUrl" />
+            </td>
+            <td>@album.Band.BandName</td>
+            <td>@album.Title</td>
+            <td><a class="btn btn-info" asp-area="" asp-controller="Album" asp-action="Update" asp-route-id="@album.AlbumId">Edytuj</a></td>
+            <td><a class="btn btn-danger" asp-area="" asp-controller="Album" asp-action="Delete" asp-route-id="@album.AlbumId" asp-route-authorId="@ViewBag.BandId">Usuń</a></td>
+        </tr>
         }
     </tbody>
 </table>
